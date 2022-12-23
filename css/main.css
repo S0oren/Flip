@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div.flip{
+    width: 300px;
+    height: 400px;
+    background-color: blueviolet;
+    margin: 50px auto;
+    box-shadow: 5px 5px 5px black;
+    transition: 300ms;
+    object-fit: contain;
+    background-size: contain;
+    position: relative;
+    overflow: hidden;
+}
+div.flip>img{
+    width: inherit;
+    height: inherit;
+}
+div.flip>div.cover{
+    width: inherit;
+    height: inherit;
+    background-color: grey;
+    position: absolute;
+}
+div.flip>div.cover>h2{
+    padding: 20px;
+    color: aliceblue;
+    align-items: center;
+}
+div.flip>div.cover>h3{
+    padding: 20px;
+    color: aliceblue;
+
+}
+div.flip>div.cover>a{
+    display: block;
+    margin: 50px auto;
+    width: 70px;
+    height: 40px;
+    background-color: green;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    color: whitesmoke;
+    box-shadow: 5px 5px 5px black;
+}
+div.flip:hover{
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+}
+div.flip:hover>div.cover{
+    top: 0;
+    left: 0;
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+}
